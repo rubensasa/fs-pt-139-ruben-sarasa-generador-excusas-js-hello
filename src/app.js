@@ -1,10 +1,3 @@
-// import "bootstrap";
-// import "./style.css";
-
-
-// import "./assets/img/rigo-baby.jpg";
-// import "./assets/img/4geeks.ico";
-
 window.onload = function () 
 {
   let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
@@ -14,12 +7,12 @@ window.onload = function ()
   
   function generarExcusa() {
 
-    let numberWho = Math.floor(Math.random() * who.length);
-    let numberAction = Math.floor(Math.random() * action.length);
-    let numberWhat = Math.floor(Math.random() * what.length);
-    let numberWhen = Math.floor(Math.random() * when.length);
+    let nWho = Math.floor(Math.random() * who.length);
+    let nAction = Math.floor(Math.random() * action.length);
+    let nWhat = Math.floor(Math.random() * what.length);
+    let nWhen = Math.floor(Math.random() * when.length);
 
-    document.querySelector("#excuse").innerHTML = who[numberWho] + " " + action[numberAction] + " " + what[numberWhat] + " " + when[numberWhen];
+    document.querySelector("#excuse").innerHTML = who[nWho] + " " + action[nAction] + " " + what[nWhat] + " " + when[nWhen];
   }
   
 generarExcusa();
